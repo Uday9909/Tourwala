@@ -1,0 +1,16 @@
+﻿🇮🇳  INDIA TOURISM FOOTFALL DATASET  |  2015–2025,Unnamed: 1,Unnamed: 2
+,,
+,,
+Predictive Analytics for Tourism Management — Government-Level Reference Dataset,,
+,,
+,Section,Description
+,States Covered,"15 Major States: UP, TN, Karnataka, AP, Maharashtra, Gujarat, Rajasthan, WB, Telangana, Uttarakhand, Kerala, HP, MP, Goa, Bihar"
+,Tourist Spots,150 destinations (10 per state) — major and lesser-known attractions
+,Time Span,2015 to 2025 (11 years × 12 months = 132 monthly data points per spot)
+,Total Records,"19,800 rows of granular monthly data"
+,Variables,"31 columns including visitors, demographics, transport, infra, weather & festivals"
+,COVID Impact,2020–2022 data modelled with realistic suppression factors
+,Data Sources,"Ministry of Tourism India, State Tourism Boards, NITI Aayog Open Data, IBEF Reports"
+,Purpose,"Predictive modelling for transport, sanitation, safety, and resource allocation"
+,Confidence Level,High (major spots) / Moderate (lesser-known spots)
+,Sheets Guide,📋 Cover | 📊 Full Dataset | 📈 Annual Summary | 🗺️ State Overview | 💡 Methodology | 🔮 Predictions Guide

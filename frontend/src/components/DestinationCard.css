@@ -1,0 +1,100 @@
+/* DestinationCard — Cyber-Brutalist Aesthetic */
+
+.dest-card-brutal {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  height: 100%;
+}
+
+.dest-img-wrapper-brutal {
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.dest-img-wrapper-brutal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dest-status-layer {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--color-bg);
+  padding: 4px 10px;
+}
+
+.dest-status-layer .badge-red { color: var(--color-risk-high); }
+.dest-status-layer .badge-amber { color: var(--color-accent); }
+.dest-status-layer .badge-green { color: var(--color-risk-low); }
+
+.dest-card-content-brutal {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.dest-title-brutal {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.dest-desc-editorial {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.dest-telemetry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--glass-border);
+}
+
+.telemetry-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.telemetry-item .mono {
+  font-size: 0.8rem;
+}
+
+.btn-brutal-sm {
+  background: var(--color-text);
+  color: var(--color-bg);
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  transition: all 0.2s ease;
+}
+
+.btn-brutal-sm:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateX(5px);
+}
+
+.dest-card-brutal:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-5px);
+}

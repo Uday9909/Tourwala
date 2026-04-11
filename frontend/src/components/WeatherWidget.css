@@ -1,0 +1,53 @@
+/* WeatherWidget — Cyber-Editorial Aesthetic */
+
+.weather-pill-brutal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--glass-border);
+  padding: 8px 16px;
+  border-radius: 2px;
+}
+
+.weather-divider-brutal {
+  width: 1px;
+  height: 14px;
+  background: var(--glass-border);
+}
+
+.weather-city-brutal {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+}
+
+.weather-temp-brutal {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.weather-condition-brutal {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.skeleton-brutal {
+  min-width: 120px;
+  height: 32px;
+  background: var(--color-surface);
+  border: 1px solid var(--glass-border);
+  animation: pulse-brutal 2s infinite ease-in-out;
+}
+
+@keyframes pulse-brutal {
+  0% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.4; }
+}

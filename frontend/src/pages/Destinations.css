@@ -1,0 +1,124 @@
+/* Destinations — Cyber-Editorial Aesthetic */
+
+.dest-page-container {
+  padding-top: 100px;
+  background: var(--color-bg);
+  min-height: 100vh;
+}
+
+.dest-header-brutal {
+  padding: 8rem 0;
+  border-bottom: 1px solid var(--glass-border);
+  margin-bottom: 4rem;
+}
+
+.dest-header-brutal .page-title {
+  font-size: clamp(3rem, 10vw, 8rem);
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  margin-bottom: 2rem;
+}
+
+.dest-header-brutal .page-desc {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  letter-spacing: 0.1em;
+  max-width: 600px;
+}
+
+.dest-content-brutal {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 4rem;
+  padding-bottom: 8rem;
+}
+
+.dest-sidebar-brutal {
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+}
+
+.filter-box-brutal {
+  padding: 2.5rem;
+  border: 1px solid var(--glass-border);
+}
+
+.filter-title-brutal {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  color: var(--color-text);
+  margin-bottom: 3rem;
+  display: block;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 1rem;
+}
+
+.filter-group-brutal {
+  margin-bottom: 2.5rem;
+}
+
+.filter-label-brutal {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.checkbox-label-brutal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.checkbox-label-brutal:hover {
+  color: var(--color-text);
+}
+
+.search-input-brutal {
+  width: 100%;
+  background: var(--color-surface);
+  border: 1px solid var(--glass-border);
+  padding: 1rem 1rem 1rem 3rem;
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.search-input-brutal:focus {
+  border-color: var(--color-primary);
+}
+
+.search-icon-brutal {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-primary);
+}
+
+.dest-grid-brutal {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .dest-content-brutal {
+    grid-template-columns: 1fr;
+  }
+  .dest-sidebar-brutal {
+    display: none;
+  }
+}

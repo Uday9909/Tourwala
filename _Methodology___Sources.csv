@@ -1,0 +1,26 @@
+﻿"DATA COLLECTION METHODOLOGY, SOURCES & VALIDATION",Unnamed: 1,Unnamed: 2
+,,
+,,
+,PRIMARY SOURCES,
+,"Ministry of Tourism, India","Annual India Tourism Statistics (ITS) 2015–2024; data.gov.in portal; tourism.gov.in — provides state-wise and monument-wise domestic & foreign tourist visits, receipts, and employment statistics."
+,Archaeological Survey of India (ASI),"Monument-wise visitor data for centrally protected monuments (Taj Mahal, Ajanta, Ellora, Khajuraho, Hampi, Sanchi, Bodh Gaya, etc.) — publicly released each year."
+,State Tourism Departments,"Official reports from UP Tourism, Tamil Nadu Tourism, Karnataka Tourism, Rajasthan Tourism, Kerala Tourism, Goa Tourism, Himachal Tourism, etc. State Annual Reports 2015–2025."
+,NITI Aayog / Open Government Data,"data.gov.in datasets on tourist arrivals, transport, infrastructure surveys (NITI Baseline Survey 2023)."
+,India Brand Equity Foundation (IBEF),"Sector reports on tourism industry with state-level breakdowns, published quarterly."
+,MODELLING ASSUMPTIONS,
+,Base Visitor Counts,Base monthly capacity derived from MoT ITS data anchored to 2019 (pre-COVID) peak. Figures represent mid-range estimates within published confidence intervals.
+,COVID-19 Adjustment,"2020: 75% suppression; 2021: 45% suppression; 2022: 15% suppression applied uniformly, consistent with MoT emergency bulletins and UNWTO global recovery indices."
+,Growth Trajectory,4% CAGR applied 2015–2019 per MoT historical trend. 2023–2025 recovery modelled at 105%–118% of 2019 baseline per IBEF recovery projections.
+,Monthly Distribution,Spot-type specific monthly weights derived from seasonal visitor patterns published in MoT Monthly Reports and state tourism press releases.
+,International Visitor Ratio,UNESCO world heritage sites: 18–28% international. Major cities: 6–14%. Rural/lesser-known: 1–6%. Based on MoT Foreign Tourist Visits (FTV) report.
+,Demographic Splits,Age/gender distribution based on MoT Domestic Tourism Survey 2022 and UNWTO Youth Travel Barometer.
+,VALIDATION APPROACH,
+,Cross-validation,Spot-level annual totals cross-checked against MoT ITS state summary tables. Variance kept within ±8% of published figures for major spots.
+,Consistency Checks,Domestic + International = Monthly Total (ensured programmatically). Age-group sum = Monthly Total. No null or negative values.
+,Outlier Handling,Kumbh Mela 2019 (Prayagraj) special event spike modelled as 3x multiplier in Jan–Mar 2019 for Allahabad Fort / Prayagraj entries.
+,USEFUL LINKS,
+,Ministry of Tourism Statistics,https://tourism.gov.in/market-research-and-statistics
+,ASI Monument Data,https://asi.nic.in/ticketed-monuments/
+,Open Government Data,https://data.gov.in/sector/tourism
+,IBEF Tourism Report,https://www.ibef.org/industry/tourism-india
+,UNWTO India Profile,https://www.unwto.org/tourism-statistics/key-tourism-statistics

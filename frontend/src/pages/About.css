@@ -1,0 +1,106 @@
+/* About — Cyber-Editorial Aesthetic */
+
+.about-page-brutal {
+  padding-top: 100px;
+  background: var(--color-bg);
+  min-height: 100vh;
+}
+
+.mission-section-brutal {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.mission-index {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  letter-spacing: 0.3em;
+  margin-bottom: 2rem;
+}
+
+.mission-title-brutal {
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  margin-bottom: 3rem;
+}
+
+.mission-statement-brutal {
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.process-grid-brutal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  padding: 8rem 0;
+  border-top: 1px solid var(--glass-border);
+}
+
+.process-step-brutal {
+  padding: 3rem;
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s ease;
+}
+
+.process-step-brutal:hover {
+  background: var(--color-surface);
+  border-color: var(--color-primary);
+}
+
+.step-number-brutal {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.process-step-brutal h3 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.process-step-brutal p {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.tech-badges-brutal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.badge-brutal {
+  padding: 10px 24px;
+  border: 1px solid var(--glass-border);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  transition: all 0.2s;
+}
+
+.badge-brutal:hover {
+  border-color: var(--color-primary);
+  color: var(--color-text);
+  background: rgba(139, 92, 246, 0.05);
+}
+
+@media (max-width: 900px) {
+  .process-grid-brutal {
+    grid-template-columns: 1fr;
+  }
+}
