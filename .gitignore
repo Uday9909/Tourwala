@@ -32,7 +32,9 @@ yarn-error.log*
 dist/
 build/
 *.log
+# Ignoring all txt except requirements.txt
 *.txt
+!requirements.txt
 
 # Local development
 .vscode/
