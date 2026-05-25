@@ -9,6 +9,10 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
+  const isActiveLink = (path) => {
+    return location.pathname === path || (path.startsWith('/spot') && location.pathname.startsWith('/spot'));
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -16,6 +20,10 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location.pathname]);
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -39,7 +47,7 @@ const Navbar = () => {
             <Link 
               key={link.name}
               to={link.path} 
-              className={`nav-link ${location.pathname === link.path || (link.path.startsWith('/spot') && location.pathname.startsWith('/spot')) ? 'active' : ''}`}
+              className={`nav-link ${isActiveLink(link.path) ? 'active' : ''}`}
             >
               {link.name}
             </Link>
@@ -67,8 +75,7 @@ const Navbar = () => {
              <Link 
               key={link.name}
               to={link.path} 
-              className={`mobile-nav-link ${location.pathname === link.path ? 'active' : ''}`}
-              onClick={() => setMobileMenuOpen(false)}
+              className={`mobile-nav-link ${isActiveLink(link.path) ? 'active' : ''}`}
             >
               {link.name}
             </Link>
