@@ -58,7 +58,9 @@ const Navbar = () => {
           <div className="nav-weather-wrapper">
             <WeatherWidget city="Auto-Detect" />
           </div>
-          <button className="btn-primary desktop-only">Explore Now</button>
+          <Link to="/destinations" className="btn-primary desktop-only">
+            Explore Now
+          </Link>
           
           <button 
             className="mobile-menu-btn"
@@ -80,7 +82,9 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <button className="btn-primary w-full mt-4">Explore Now</button>
+          <Link to="/destinations" className="btn-primary w-full mt-4" onClick={() => setMobileMenuOpen(false)}>
+            Explore Now
+          </Link>
         </div>
       )}
     </nav>
