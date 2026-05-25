@@ -81,10 +81,20 @@ def recommend_cities(df_daily, target_date, current_city):
     recent_data['Risk_Score'] = recent_data['Capacity Utilization'] + recent_data['Disaster Indicator']*2 + recent_data['Pandemic Indicator']*2
     sorted_cities = recent_data.sort_values(by='Risk_Score', ascending=True)
     
-    best_spots = sorted_cities.head(3)['District / City'].tolist()
-    worst_spots = sorted_cities.tail(3)['District / City'].tolist()
+    def _dedupe_without_current(values):
+        seen = set()
+        filtered = []
+        for city in values:
+            if city == current_city or city in seen:
+                continue
+            seen.add(city)
+            filtered.append(city)
+        return filtered
+
+    best_spots = _dedupe_without_current(sorted_cities.head(3)['District / City'].tolist())
+    worst_spots = _dedupe_without_current(sorted_cities.tail(3)['District / City'].tolist())
     
-    return list(set(best_spots)), list(set(worst_spots))
+    return best_spots, worst_spots
 
 def get_decision_intelligence(city, predicted_count, baseline_rolling_avg, capacity, 
                               pandemic_ind=0, disaster_ind=0, df_daily=None, target_date=None):
